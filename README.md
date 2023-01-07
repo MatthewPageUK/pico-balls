@@ -5,7 +5,7 @@ A bouncing balls demo using the multicore features of the Raspberry Pi Pico. Req
 * Uses core0 to maintain a draw loop and handle screen updates
 * Uses core1 to maintain the balls and calculate the physics
 
-Uploading VID_20230107_191156.mp4…
+https://user-images.githubusercontent.com/46349796/211167613-f5243087-230d-4e97-9039-aa2ea5e21bd8.mp4
 
 ## Hardware
 * Raspberry Pi Pico - https://thepihut.com/products/raspberry-pi-pico-w
