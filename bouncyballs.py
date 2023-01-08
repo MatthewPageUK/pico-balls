@@ -64,6 +64,7 @@ class Ball():
         self.p = p
         self.r = r
         self.c = c
+        self.m = self.v.magnitude()
 
     """Draw the ball on the display
 
@@ -88,7 +89,10 @@ class Ball():
     def move(self, bounds):
         
         # Move the position
-        self.p += self.v * (self.v.magnitude() * 4)
+        # self.p += self.v * (self.v.magnitude() * 4)
+        
+        # Optimised by storing magnitude (our balls don't change speed)
+        self.p += self.v * (self.m * 4)
         
         # Bounce off the walls and move inside if gone out of bounds
         if self.p.x - self.r < 0:

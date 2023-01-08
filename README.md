@@ -26,4 +26,14 @@ With 1 ball still can't get a display frame rate above 22 fps.
 * Optimising code for maximum efficiency
 * Why is frame rate capped at 22fps?
 
+## Updates
+
+### 08/01/2023
+Tried some optimising :
+* Calculation and render on a single core - 12fps
+* Multi core - Render = 15fps | Calc = 25fps
+* Swapped OO classes for simple function calls on a list of ball data - Render = 15fps | Calc = 100fps (4 times faster not using OO)
+* Swapped function calls for inline code - Render = 16fps | Calc = 125fps
+
+Example code in main-simple.py and main-simple-multicoreonly.py
 
